@@ -1,18 +1,18 @@
 
-add_executable(g1_loco_client high_level/g1_loco_client_example.cpp)
-target_link_libraries(g1_loco_client unitree_sdk2)
+#add_executable(g1_loco_client high_level/g1_loco_client_example.cpp)
+#target_link_libraries(g1_loco_client unitree_sdk2)
 
-add_executable(g1_arm5_sdk_dds_example high_level/g1_arm5_sdk_dds_example.cpp)
-target_link_libraries(g1_arm5_sdk_dds_example unitree_sdk2)
+#add_executable(g1_arm5_sdk_dds_example high_level/g1_arm5_sdk_dds_example.cpp)
+#target_link_libraries(g1_arm5_sdk_dds_example unitree_sdk2)
 
-add_executable(g1_arm7_sdk_dds_example high_level/g1_arm7_sdk_dds_example.cpp)
-target_link_libraries(g1_arm7_sdk_dds_example unitree_sdk2)
+#add_executable(g1_arm7_sdk_dds_example high_level/g1_arm7_sdk_dds_example.cpp)
+#target_link_libraries(g1_arm7_sdk_dds_example unitree_sdk2)
 
-add_executable(g1_ankle_swing_example low_level/g1_ankle_swing_example.cpp)
-target_link_libraries(g1_ankle_swing_example unitree_sdk2)
+#add_executable(g1_ankle_swing_example low_level/g1_ankle_swing_example.cpp)
+#target_link_libraries(g1_ankle_swing_example unitree_sdk2)
 
-add_executable(g1_audio_client_example audio/g1_audio_client_example.cpp)
-target_link_libraries(g1_audio_client_example unitree_sdk2)
+#add_executable(g1_audio_client_example audio/g1_audio_client_example.cpp)
+#target_link_libraries(g1_audio_client_example unitree_sdk2)
 
 add_executable(g1_cop_event CoP/g1_cop_event.cpp)
 target_link_libraries(g1_cop_event unitree_sdk2)

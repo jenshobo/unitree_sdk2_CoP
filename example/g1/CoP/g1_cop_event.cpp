@@ -43,7 +43,7 @@ void start() {
     state = LOCK_STAND;
     client.SetFsmId(state);
     std::cout << "Setting lock stand mode" << std::endl;
-    unitree::common::Sleep(5);
+    unitree::common::Sleep(10);
     state = MAIN_MOTION_CONTROL;
     client.SetFsmId(state);
     std::cout << "Setting main motion control mode" << std::endl;
@@ -57,7 +57,7 @@ void sit() {
     state = SIT;
     client.SetFsmId(state);
     std::cout << "Setting sit mode" << std::endl;
-    unitree::common::Sleep(5);
+    unitree::common::Sleep(10);
     state = DAMPING;
     client.SetFsmId(state);
     std::cout << "Setting damping mode" << std::endl;
