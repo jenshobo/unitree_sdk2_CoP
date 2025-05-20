@@ -38,12 +38,15 @@ void start() {
     fsm_states state;
     state = DAMPING;
     client.SetFsmId(state);
+    std::cout << "Setting damping mode" << std::endl;
     unitree::common::Sleep(1);
     state = LOCK_STAND;
     client.SetFsmId(state);
-    unitree::common::Sleep(3);
+    std::cout << "Setting lock stand mode" << std::endl;
+    unitree::common::Sleep(5);
     state = MAIN_MOTION_CONTROL;
     client.SetFsmId(state);
+    std::cout << "Setting main motion control mode" << std::endl;
 }
 
 void sit() {
@@ -52,9 +55,11 @@ void sit() {
     fsm_states state;
     state = SIT;
     client.SetFsmId(state);
-    unitree::common::Sleep(3);
+    std::cout << "Setting sit mode" << std::endl;
+    unitree::common::Sleep(5);
     state = DAMPING;
     client.SetFsmId(state);
+    std::cout << "Setting damping mode" << std::endl;
 }
 
 void say() {
@@ -65,6 +70,7 @@ void say() {
 
     int32_t ret;
     ret = client.TtsMaker(in, 1);
+    std::cout << ret << std::endl;
 }
 
 void eyecolor() {
@@ -89,6 +95,7 @@ void eyecolor() {
     stream.clear();
 
     client.LedControl(r, g, b);
+    std::cout << r << ' ' << g << ' ' << b << std::endl;
 }
 
 int main(int argc, char const *argv[]) {

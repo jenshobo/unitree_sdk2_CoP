@@ -1,6 +1,10 @@
 # unitree_sdk2
 Unitree robot sdk version 2.
 
+### Changes made
+
+Adding a new example project ```example/g1/CoP/``` which takes simple written commands and parses them to actions for the humanoid to undertake.
+
 ### Prebuild environment
 * OS  (Ubuntu 20.04 LTS)  
 * CPU  (aarch64 and x86_64)   
