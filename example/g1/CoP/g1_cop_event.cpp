@@ -97,6 +97,9 @@ int main(int argc, char const *argv[]) {
         exit(0);
     }
 
+    std::string networkInterface = argv[1];
+    unitree::robot::ChannelFactory::Instance()->Init(0, networkInterface.c_str());
+
     std::unordered_map<std::string, void(*)()> functionMap = {
         {"--start", &start},
         {"--sit", &sit},
@@ -104,9 +107,7 @@ int main(int argc, char const *argv[]) {
         {"--eyecolor", &eyecolor}
     };
 
-    unitree::robot::ChannelFactory::Instance()->Init(0, argv[1]);
-
-    for (int i = 1; i < argc; ++i) {
+    for (int i = 2; i < argc; ++i) {
         std::string arg = argv[i];
 
         auto it = functionMap.find(arg);
